@@ -1,0 +1,37 @@
+<%= form_for(@api) do |f| %>
+  <% if @api.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@api.errors.count, "error") %> prohibited this api from being saved:</h2>
+
+      <ul>
+      <% @api.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_area :url %>
+  </div>
+  <div class="field">
+    <%= f.label :emails %><br>
+    <%= f.text_area :emails %>
+  </div>
+  <div class="field">
+    <%= f.label :enable_notification %><br>
+    <%= f.check_box :enable_notification %>
+  </div>
+  <div class="field">
+    <%= f.label :expected_response %><br>
+    <%= f.text_area :expected_response %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

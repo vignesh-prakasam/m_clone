@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Api:</strong>
+  <%= @log.api_id %>
+</p>
+
+<p>
+  <strong>Response:</strong>
+  <%= @log.response %>
+</p>
+
+<p>
+  <strong>Current status:</strong>
+  <%= @log.current_status %>
+</p>
+
+<%= link_to 'Edit', edit_log_path(@log) %> |
+<%= link_to 'Back', logs_path %>

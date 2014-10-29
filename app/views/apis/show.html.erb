@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @api.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @api.url %>
+</p>
+
+<p>
+  <strong>Emails:</strong>
+  <%= @api.emails %>
+</p>
+
+<p>
+  <strong>Enable notification:</strong>
+  <%= @api.enable_notification %>
+</p>
+
+<p>
+  <strong>Expected response:</strong>
+  <%= @api.expected_response %>
+</p>
+
+<%= link_to 'Edit', edit_api_path(@api) %> |
+<%= link_to 'Back', apis_path %>
