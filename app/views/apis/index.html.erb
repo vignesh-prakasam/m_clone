@@ -1,4 +1,11 @@
-<h1>Listing apis</h1>
+<div class="row">
+  <div class="large-12 columns">
+    <div class="panel">
+      <h1 class="text-center">APIs</h1>
+    </div>
+  </div>
+</div>
+
 
 <table>
   <thead>
@@ -20,7 +27,7 @@
         <td><%= api.emails %></td>
         <td><%= api.enable_notification %></td>
         <td><%= api.expected_response %></td>
-        <td><%= link_to 'Show', api %></td>
+        <td><%= link_to 'Show', api , :class => 'button success tiny radius'  %></td>
         <td><%= link_to 'Edit', edit_api_path(api) %></td>
         <td><%= link_to 'Destroy', api, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
